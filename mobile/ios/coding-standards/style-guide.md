@@ -151,6 +151,21 @@ __strong typeof(self) strongSelf = weakSelf;
 
 then use strongSelf.whatever in your block. Not using a strong reference will cause a compiler error.
 
+### Self iVars
+As stated in the [The Swift Programming Language](https://itunes.apple.com/gb/book/swift-programming-language/id881256329?mt=11) 
+
+> Swift requires you to write self.someProperty() or self.someMethod() (rather than just someProperty or someMethod()) whenever you refer to a member of self within a closure. This helps you remember that it's possible to capture self by accident. 
+
+We will adopt the same convention for iVars within blocks, in our Objective-C code (even though it is not enforced) to make our code more Swift-like and encourage us to think in this way. This would look like 
+
+```objectivec
+^{
+	self->_myVar = value;
+}
+```
+
+You are welcome to use this format outside of blocks but it is not required.
+
 ### `!` conditional statements
 In order to prepare for our migration to Swift, all future conditionals using the `!` operator are to be avoided unless they act upon a true boolean ([https://developer.apple.com/library/prerelease/mac/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html](developer.apple.com/library/prerelease/mac/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html)).
 
