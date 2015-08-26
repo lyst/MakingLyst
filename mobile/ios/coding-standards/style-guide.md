@@ -267,6 +267,23 @@ When adding new user interface views to the app, you must always give them an ac
 self.loginButton.accessibilityIdentifier = "loginViewController.loginButton";
 ```
 
+### NSLayoutConstraint Identifiers
+When adding constraints to your autolayout views, you must give them an identifier. They are used in autolayout logging and will significantly improve the legibility of the output. 
+
+You can add them in code this way
+
+```objectivec
+constraintVariableName.identifier = “constraintVariableName”;
+```
+
+```objectivec
+for(NSLayoutConstraint *constraint in verticalLayout) {
+	constraint.identifier = @“ verticalLayout”; 	// yes, it’s right to set them all to the same identifier
+}
+```
+
+In InterfaceBuilder, use the identifier property in the inspector.
+
 ### Accessibility Labels
 When adding new user interface views to the app, consider giving them accessibility labels. Each time you do this you make the app more useable by those with accessibility needs.  
 
