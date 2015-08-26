@@ -248,6 +248,23 @@ Then should have at most one assert since the whole method should be for a singl
 
 The exception to this rule is where the asserts are used in the given, in order to assert a good known state before the when actions.
 
+### Accessibility Identifiers
+When adding new user interface views to the app, you must always give them an accessibility-identifier. These are important for a number of reasons.
+
+* They provide a means of finding the views in various user interface testing frameworks (including KIF, which we currently use)
+* They are used in autolayout console logging and will significantly improve the legibility of the output
+
+```objectivec
+self.loginButton.accessibilityIdentifier = "loginViewController.loginButton";
+```
+
+### Accessibility Labels
+When adding new user interface views to the app, consider giving them accessibility labels. Each time you do this you make the app more useable by those with accessibility needs.  
+
+```objectivec
+self.loginButton.accessibilityLabel = NSLocalizedString("LoginButtonAccessibilityLabel", @"");
+```
+
 ### Pairing methods visually close
 In the case where we have methods that need another method: (e.g `addObserver`/`removeObserver` for Notification Centre) always have them visually close to ensure that we are not missing the pair (the `removeObserver` for example).
 
