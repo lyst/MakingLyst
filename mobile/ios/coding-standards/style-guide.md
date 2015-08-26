@@ -204,6 +204,15 @@ Specifically, use `NSInteger` whenever you need an integer value that is not of 
 Always annotate pointers with `nonnull` or `nullable`. It is a requirement that you always annotate methods and properties that are pointers with either `nonnull` or `nullable` and you are encouraged to reject PR’s without them. 
 This improves clarity of intent, and allows the compiler to perform more checks on your code which will enable better bridging when we start blending Swift and Objective-C together.
 
+### `NS_DESIGNATED_INITIALISER`
+In order to make our initialisation code clearer in intent between designated and convenience initialisers, and to ensure more correct subclassing, we will now adopt the `NS_DESIGNATED_INITIALISER` in all new classes, and refactor old ones as we go.
+
+This introduces restrictions that are in alignment with the way that Swift works with designated and convenience  initialisers.
+
+New clases which do not identify their designated initialiser(s) will not pass code review.
+
+See https://developer.apple.com/library/prerelease/ios/releasenotes/ObjectiveC/ModernizationObjC/AdoptingModernObjective-C/AdoptingModernObjective-C.html#//apple_ref/doc/uid/TP40014150-CH1-SW8
+
 ### Readonly properties by default
 All properties should be readonly until they cannot be (for easier testing and less brittle code)
 
