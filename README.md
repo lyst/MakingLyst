@@ -8,6 +8,6 @@ We are based in London, England and we welcome your feedback, comments and, yes,
 
 You can read our blog here http://developers.lyst.com/
 
-You can ready our tweets here https://twitter.com/makinglyst
+You can read our tweets here https://twitter.com/makinglyst
 
 And you can join us here http://www.lyst.com/careers/
