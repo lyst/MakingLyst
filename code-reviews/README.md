@@ -1,5 +1,5 @@
-Code Review guidlines
-=====================
+Guidelines for code reviews
+===========================
 
 _Version 0.1 24-09-2015_
 
