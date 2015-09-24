@@ -129,6 +129,19 @@ CGRect frame = myObject.frame;
 return CGRectGetWidth(frame);
 ```
 
+### Objective-C Collection Generics
+With the release of XCode 7 we will adopt generics for Objective-C to enable better Swift interoperability, prepare ourselves for writing actual Swift, and to allow the compiler to catch more errors for us. As Apple say in their release notes
+
+> Allow you to specify type information for collection classes like NSArray, NSSet, and NSDictionary. The type information improves Swift access when you bridge from Objective-C and simplifies the code you have to write.
+
+Unless your collection must be of mixed type with no common base or wrapping class (which could well be a code smell, frankly) then you should constraint it with a type.
+
+```objectivec
+NSArray<NSDate*> *dates;
+NSSet<NSString*> *words;
+NSDictionary<NSURL*, NSData*> *cachedData;
+```
+
 ### `#define` constant values
 `#defines` for constant values should be replaced by the (type checker friendly) 
 
