@@ -54,6 +54,8 @@ We favour image catalogs for all new image assets that are added to the project.
 
 * "Xcode compiles your asset catalogs into a runtime binary file format that reduces the download time for your app"
 * With iOS 9, App Thinning includes a technique called Slicing that can automatically reduce the space an app takes up if you use asset catalogs.
+* Once XCode 7 is released, all images are to be generated in PDF format and included in image asset catalogues so that XCode can auto-generate the needed assets. 
+* Once XCode 7 is released, PNG is deprecated, but to be preferred on any occasion where an image asset catalogue cannot be used for some reason. JPEG never be used because of the inherent issues with compression artefacts.
 
 [developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html)
 
