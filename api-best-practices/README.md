@@ -331,6 +331,11 @@ The most basic is to provide token authentication. Generate a token that is shar
 
 For a more granular method of identifying user accounts through the API service, we recommend using [OAuth2](http://oauth.net/2/) authentication. Often considered complicated, OAuth2 is actually well supported in almost all languages.
 
+Other authentication methods to consider include:
+
+* [Hawk](https://github.com/hueniverse/hawk)
+* [JSON Web Token](https://tools.ietf.org/html/rfc7519)
+
 ### Statelessness
 
 A concept of HTTP is that request/response groups should be stateless between each other. For many this means "no storing of state on the server" or "don't use cookies". Both of these are true - we can use authentication tokens with each HTTP request to avoid cookies and state does not need to be maintained by the client or server.
