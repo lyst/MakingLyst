@@ -252,7 +252,7 @@ The request resource was not found. | 404 NOT FOUND
 
 For good responses use 200 OK by default and 201 CREATED when an action has generated content on the server.
 
-Never use 5XX responses in your API service. All errors should be caught and handled gracefully. Use the appropriate HTTP status code for errors that occur when using the API service.
+Never use 5XX responses for **application** errors. All application errors should be caught and handled gracefully. 5XX responses should be reserved for service or server issues. Use the appropriate HTTP status code for errors that occur when using the API service.
 
 If the standard HTTP status codes do not adequately describe the error then provide your own. Your own error responses should fall under a 400 BAD REQUEST response. These bespoke errors should follow a common format across the entire API service. Like all things, they must be verbose.
 
