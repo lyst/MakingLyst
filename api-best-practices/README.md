@@ -54,7 +54,7 @@ For a Lyst-specific tooling guide, see the [tooling](/TOOLING.md) document.
 
 Why does your team want to build an HTTP API? This is the first thing you should ask yourself.
 
-Is it to expose functionality to a microservice? Is it to share some data from a database? Sometimes HTTP won't be the best suited transport protocol for the solution. If your team need  asynchronous or real time communication then a protocol like websockets might be a better solution. Always consider this: HTTP is not always the answer. That said, HTTP can be the answer in many, many situations.
+Is it to expose functionality to a microservice? Is it to share some data from a database? Sometimes HTTP won't be the best suited transport protocol for the solution. If your team need  asynchronous or real time communication then a protocol like [websockets](https://en.wikipedia.org/wiki/WebSocket) or [MQTT](https://en.wikipedia.org/wiki/MQTT) might be a better solution. Always consider this: HTTP is not always the answer. That said, HTTP can be the answer in many, many situations.
 
 
 ## Design
