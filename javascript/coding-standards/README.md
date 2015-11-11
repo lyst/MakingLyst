@@ -1329,7 +1329,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
     ```
 
-  - [18.4](#18.5) <a name='18.4'></a> (`space-infix-ops`) Set off operators with spaces.
+  - [18.5](#18.5) <a name='18.5'></a> (`space-infix-ops`) Set off operators with spaces.
 
     ```javascript
     // bad
@@ -1339,7 +1339,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     const x = y + 5;
     ```
 
-  - [18.5](#18.6) <a name='18.5'></a> (`eol-last`) End files with a single newline character.
+  - [18.6](#18.6) <a name='18.6'></a> (`eol-last`) End files with a single newline character.
 
     ```javascript
     // bad
@@ -1363,7 +1363,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     })(this);↵
     ```
 
-  - [18.6](#18.6) <a name='18.6'></a> Leave a blank line after blocks and before the next statement.
+  - [18.7](#18.7) <a name='18.7'></a> Leave a blank line after blocks and before the next statement.
 
     ```javascript
     // bad
@@ -1703,7 +1703,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
     ```
 
-  - [22.6](#22.6) <a name='22.6'></a> If your file exports a single class, your filename should be exactly the name of the class.
+  - [22.6](#22.6) <a name='22.6'></a> Your filename should be the name of the export in kebab-case.
     ```javascript
     // file contents
     class CheckBox {
@@ -1719,10 +1719,10 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     import CheckBox from './check_box';
 
     // good
-    import CheckBox from './CheckBox';
+    import CheckBox from './check-box';
     ```
 
-  - [22.7](#22.7) <a name='22.7'></a> Use camelCase when you export-default a function. Your filename should be identical to your function's name.
+  - [22.7](#22.7) <a name='22.7'></a> Use camelCase when you export-default a function.
 
     ```javascript
     function makeStyleGuide() {
