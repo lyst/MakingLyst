@@ -47,7 +47,7 @@ HTTP is a flexible transport protocol and there are many different ways to build
     - [Trying to be too RESTful](#trying-to-be-too-restful)
 - [Credits](#credits)
 
-For a Lyst-specific tooling guide, see the [tooling](/TOOLING.md) document.
+For a Lyst-specific tooling guide, see the [tooling](TOOLING.md) document.
 
 
 ## Ask why
