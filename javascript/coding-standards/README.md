@@ -608,7 +608,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     function Queue(contents = []) {
       this._queue = [...contents];
     }
-    Queue.prototype.pop = function() {
+    Queue.prototype.pop = function () {
       const value = this._queue[0];
       this._queue.splice(0, 1);
       return value;
@@ -639,7 +639,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
       Queue.apply(this, contents);
     }
     inherits(PeekableQueue, Queue);
-    PeekableQueue.prototype.peek = function() {
+    PeekableQueue.prototype.peek = function () {
       return this._queue[0];
     }
 
@@ -655,12 +655,12 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    Jedi.prototype.jump = function() {
+    Jedi.prototype.jump = function () {
       this.jumping = true;
       return true;
     };
 
-    Jedi.prototype.setHeight = function(height) {
+    Jedi.prototype.setHeight = function (height) {
       this.height = height;
     };
 
@@ -892,7 +892,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // good
-    function() {
+    function () {
       test();
       console.log('doing stuff..');
 
@@ -908,7 +908,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
 
     // bad - unnecessary function call
-    function(hasName) {
+    function (hasName) {
       const name = getName();
 
       if (!hasName) {
@@ -921,7 +921,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
 
     // good
-    function(hasName) {
+    function (hasName) {
       if (!hasName) {
         return false;
       }
@@ -939,7 +939,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    function(url) {
+    function (url) {
         if (!url.endsWith('/')) {
             url = url + '/';
         }
@@ -947,7 +947,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
 
     // good
-    function(url) {
+    function (url) {
         let fixedUrl = url;
         if (!url.endsWith('/')) {
             fixedUrl = url + '/';
@@ -1004,7 +1004,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
       anonymous(); // => TypeError anonymous is not a function
 
-      var anonymous = function() {
+      var anonymous = function () {
         console.log('anonymous function expression');
       };
     }
@@ -1122,10 +1122,10 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     }
 
     // bad
-    function() { return false; }
+    function () { return false; }
 
     // good
-    function() {
+    function () {
       return false;
     }
     ```
@@ -1343,14 +1343,14 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    (function(global) {
+    (function (global) {
       // ...stuff...
     })(this);
     ```
 
     ```javascript
     // bad
-    (function(global) {
+    (function (global) {
       // ...stuff...
     })(this);↵
     ↵
@@ -1358,7 +1358,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // good
-    (function(global) {
+    (function (global) {
       // ...stuff...
     })(this);↵
     ```
@@ -1511,7 +1511,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    (function() {
+    (function () {
       const name = 'Skywalker'
       return name
     })()
@@ -1682,7 +1682,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     // bad
     function foo() {
       const self = this;
-      return function() {
+      return function () {
         console.log(self);
       };
     }
@@ -1690,7 +1690,7 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
     // bad
     function foo() {
       const that = this;
-      return function() {
+      return function () {
         console.log(that);
       };
     }
@@ -1835,21 +1835,21 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    it('remove hidden', function() {});
+    it('remove hidden', function () {});
 
     // good
-    it('should remove the "hidden" class', function() {});
+    it('should remove the "hidden" class', function () {});
     ```
 
   - [26.4](#26.4) <a name='26.4'></a> Group tests related to a function in `describe`, with the name of the function you are testing (prefixed with a hash - `#`).
 
     ```javascript
     // bad
-    it ('onOptionsChange should render the last 5 user search terms', function() {});
+    it ('onOptionsChange should render the last 5 user search terms', function () {});
 
     // good
-    describe('#onOptionsChange()', function() {
-        it('should render the last 5 user search terms', function() {});
+    describe('#onOptionsChange()', function () {
+        it('should render the last 5 user search terms', function () {});
     });
     ```
 
@@ -1857,13 +1857,13 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
 
     ```javascript
     // bad
-    it('should equal 5', function() {
+    it('should equal 5', function () {
         expect(2+3).to.equal(5);
     });
-    it('should equal 6', function() {
+    it('should equal 6', function () {
         expect(3+3).to.equal(6);
     });
-    it('should equal 7', function() {
+    it('should equal 7', function () {
         expect(2+4).to.equal(7);
     });
 
@@ -1872,8 +1872,8 @@ Our code currently isn't 100% compliant with this style guide, however we are wo
         [2, 3, 5],
         [3, 3, 6],
         [2, 4, 7]
-    ], function(left, right, expected) {
-        it('should equal ' + expected, function() {
+    ], function (left, right, expected) {
+        it('should equal ' + expected, function () {
             expect(left + right).to.equal(expected);
         });
     });
