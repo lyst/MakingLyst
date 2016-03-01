@@ -2,7 +2,7 @@
 
 We previously followed the [Google Style Guide](http://google.github.io/styleguide/javascriptguide.xml), however it hasn't been updated for ES2015, so we forked the [Airbnb Style Guide](https://github.com/airbnb/javascript) and ported a few rules from the Google Style Guide we liked, and added a few more that we found were sensible in our case.
 
-Terms parenthesised after the rule number is the matching rule name in [ESLint](eslint.org/docs/rules/).
+Terms parenthesised after the rule number is the matching rule name in [ESLint](http://eslint.org/docs/rules/).
 
 Our code currently isn't 100% compliant with this style guide, however we are working our way towards it.
 
