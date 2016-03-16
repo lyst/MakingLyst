@@ -380,7 +380,7 @@ For large or public API services writing extensive documentation is essential. Y
 
 Your examples should be language agnostic and use cURL examples that are easy to copy and paste. Most engineers understand cURL and can take the agnostic example and interpret it in their language of choice with little effort.
 
-We recommend [MkDocs](mkdocs.org) as a simple markdown based document generator that can be uploaded to github pages.
+We recommend [MkDocs](http://mkdocs.org) as a simple markdown based document generator that can be uploaded to github pages.
 
 ## Support
 
@@ -394,7 +394,7 @@ Adding new functionality is not so tricky and is encouraged. Your clients may as
 
 The difficulty of the feature addition should denote the action required to add the new feature. If you are just adding an attribute to a resource, that should require zero version bumping - just add it. For entirely new endpoints and functionality, ensure they are documented well.
 
-If you do need to make breaking changes to an API service then you must use versioning. Verisioning API services is hard and there is no best way to do it. Verisioning using the URI is the easiest but not encouraged:
+If you do need to make breaking changes to an API service then you must use versioning. Versioning API services is hard and there is no best way to do it. Versioning using the URI is the easiest but not encouraged:
 
 ```bash
 GET /api/v1/users
@@ -443,14 +443,14 @@ https://api-content.dropbox.com/1/files_put/auto/<path>?param=val
 
 ### Using the wrong HTTP method
 
-Flickr's "REST" API has a lot wrong with it, particularly it's vague distinction between GET and POST requests:
+Flickr's "REST" API has a lot wrong with it, particularly its vague distinction between GET and POST requests:
 
 ```bash
 GET https://api.flickr.com/services/rest/?method=flickr.test.echo&name=value
 POST https://api.flickr.com/services/rest/?method=flickr.test.echo&name=value
 ```
 
-Regardless of the HTTP method used, these perform identical actions. Commonly, API services will use the POST method to accept parameters to endpoints that just request data. In situations like these, we believe poor effort has been made to design the endpoint and it's purpose. Always design your endpoints and consider the data being shared.
+Regardless of the HTTP method used, these perform identical actions. Commonly, API services will use the POST method to accept parameters to endpoints that just request data. In situations like these, we believe poor effort has been made to design the endpoint and its purpose. Always design your endpoints and consider the data being shared.
 
 ### Trying to be too RESTful
 
