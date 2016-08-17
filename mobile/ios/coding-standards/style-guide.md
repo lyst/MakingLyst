@@ -29,7 +29,7 @@ Your file headers should contain useful information only. The file already has a
 Trialling: we will consider a diff to be the difference between the number of deletions and additions. So, if you make 1,100 deletions and 600 additions that’s still okay.
 
 ### Work In Progress Pull Requests
-In order to let others see what you are doing as early as possible, consider committing and pushing your branch to github immediately you start it and opening a pull request with a WIP: prefix.
+In order to let others see what you are doing as early as possible, consider committing and pushing your branch to github immediately after you start it and opening a pull request with a WIP: prefix.
 
 e.g. ‘WIP: IOS-101 Refactoring All The Things’
 

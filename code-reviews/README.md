@@ -6,7 +6,7 @@ _Version 0.1 24-09-2015_
 
 Code reviews are a key part of the development process at Lyst. We do them for every change. They are a form of asynchronous pair programming and they should hopefully help us spot bugs and design mistakes in our code before our users do.
 
-Doing reviews for other peoples code is an **essential** part of every developers job. **It is one of the highest priority things you can work on**. Every open pull request we have is a change that isn't shipping to users. Since we often need multiple attempts at a new feature to get it just right for our users that means the longer reviews take the longer it takes us to get polished features completed.
+Doing reviews for other people's code is an **essential** part of every developer's job. **It is one of the highest priority things you can work on**. Every open pull request we have is a change that isn't shipping to users. Since we often need multiple attempts at a new feature to get it just right for our users that means the longer reviews take the longer it takes us to get polished features completed.
 However, code reviews start with a pull request, and that means you have a responsibility to make people actually want to review your code when you make one.
 
 ### Submitting pull requests
@@ -17,7 +17,7 @@ You should read over your own code, make sure you didn't omit any files, check f
 
 ####Keep your changes small
 
-Small changes are much easier to review.  They're also much eeasier to explain to people. This means that mistakes are less likely to sneak through and the discussion of the change should be much more productive. It also means your PR should avoid ending up with tens of comments that go round and round in circles without ever getting your code merged. It is not always possible to break a change up into small parts but it very often is. A good guideline for this is that your change should not effect a combined total of more than 400 lines.
+Small changes are much easier to review.  They're also much easier to explain to people. This means that mistakes are less likely to sneak through and the discussion of the change should be much more productive. It also means your PR should avoid ending up with tens of comments that go round and round in circles without ever getting your code merged. It is not always possible to break a change up into small parts but it very often is. A good guideline for this is that your change should not effect a combined total of more than 400 lines.
 
 #### Write good descriptions
 
@@ -47,7 +47,7 @@ Tolerate being interrupt driven. You need focussed time to your other work done 
 
 #### Prioritise code review highly
 
-**It's one of the most important things you can work on**. The only things that should come ahead of it are time critical work such as fixing availability problems or dealing with high priority requests from customers. This means you should expect to spend some time every day doing reviews and that you will probably need to spend 2-3 sessions per day replying to PRs and reading other peoples code.
+**It's one of the most important things you can work on**. The only things that should come ahead of it are time critical work such as fixing availability problems or dealing with high priority requests from customers. This means you should expect to spend some time every day doing reviews and that you will probably need to spend 2-3 sessions per day replying to PRs and reading other people's code.
 
 #### Be thorough
 
