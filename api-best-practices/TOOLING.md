@@ -49,9 +49,9 @@ def test_user_get(http_client, base_url, response_status, use_slug):
     assert response.status_code == response_status
 ```
 
-We're using a fixture for the `http_client` attribute. This is an http client with an authenticated user for us, so we don't need to authenticated each time. We'd use a different client for an anonymous user.
+We're using a fixture for the `http_client` attribute. This is an http client with an authenticated user for us, so we don't need to authenticate each time. We'd use a different client for an anonymous user.
 
-In our API tests, we use the [paramterized](http://pytest.org/latest/parametrize.html) mark to run through the test each time with slightly different conditions, in this case: a different url and status code.
+In our API tests, we use the [parametrize](http://pytest.org/latest/parametrize.html) mark to run through the test each time with slightly different conditions, in this case: a different url and status code.
 
 This test only checks the response status from the service but suffices for the purpose of this test. A separate test that inspects the response body attributes would also help to ensure this endpoint is behaving as expected and well covered.
 
