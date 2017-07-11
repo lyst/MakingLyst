@@ -15,7 +15,7 @@ However, code reviews start with a pull request, and that means you have a respo
 
 You should read over your own code, make sure you didn't omit any files, check for style errors and so on. You should do this before you create the PR.
 
-####Keep your changes small
+#### Keep your changes small
 
 Small changes are much easier to review.  They're also much easier to explain to people. This means that mistakes are less likely to sneak through and the discussion of the change should be much more productive. It also means your PR should avoid ending up with tens of comments that go round and round in circles without ever getting your code merged. It is not always possible to break a change up into small parts but it very often is. A good guideline for this is that your change should not effect a combined total of more than 400 lines.
 
