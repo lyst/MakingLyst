@@ -6,8 +6,8 @@ In here you will find how to's, guides, code snippets and anything else that we 
 
 We are based in London, England and we welcome your feedback, comments and, yes, pull requests.
 
-You can read our blog here http://developers.lyst.com/
+You can read our blog here https://making.lyst.com/
 
 You can read our tweets here https://twitter.com/makinglyst
 
-And you can join us here http://www.lyst.com/careers/
+And you can join us here https://www.lyst.com/careers/
